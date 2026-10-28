@@ -1,0 +1,27 @@
+server:
+  port: ${SERVER_PORT:8081}
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:admin_base}?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+    username: ${DB_USER:root}
+    password: ${DB_PWD:123456}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+
+admin:
+  jwt-secret: ${JWT_SECRET:adminbase-default-dev-secret-please-override-by-env-0123456789abcdef}
+  jwt-hours: ${JWT_HOURS:12}
+  remember-hours: 168
+  online-window-minutes: 60
+
+logging:
+  level:
+    com.adminbase: info

@@ -1,0 +1,63 @@
+/* ============ 设计令牌:浅色 / 深色 ============ */
+:root, :root[data-theme='light'] {
+  --bg: #eef0ea;
+  --bg2: #f7f8f5;
+  --card: #ffffff;
+  --card2: #f6f7f3;
+  --side: rgba(252, 253, 250, 0.86);
+  --line: #e6e9e0;
+  --line2: #ecefe6;
+  --txt: #1d2126;
+  --txt2: #5b6470;
+  --txt3: #9aa3ad;
+  --acc: #71b81f;
+  --acc-deep: #4e8f0c;
+  --acc-soft: rgba(113, 184, 31, 0.12);
+  --blue: #3e7ef7;
+  --blue-soft: rgba(62, 126, 247, 0.1);
+  --red: #e5484d;
+  --red-soft: rgba(229, 72, 77, 0.1);
+  --amber: #e59819;
+  --amber-soft: rgba(229, 152, 25, 0.12);
+  --violet: #8b5cf6;
+  --violet-soft: rgba(139, 92, 246, 0.1);
+  --teal: #0f9d8f;
+  --dark-btn: #24282f;
+  --dark-btn-h: #31363f;
+  --shadow: 0 1px 2px rgba(28, 33, 26, 0.04), 0 10px 30px rgba(28, 33, 26, 0.06);
+  --shadow-lg: 0 18px 50px rgba(28, 33, 26, 0.16);
+  --r: 18px;
+  --glow: rgba(140, 220, 60, 0.55);
+}
+
+:root[data-theme='dark'] {
+  --bg: #0a0d0a;
+  --bg2: #0e130e;
+  --card: #131a13;
+  --card2: #182018;
+  --side: rgba(14, 19, 14, 0.88);
+  --line: #223022;
+  --line2: #1c281c;
+  --txt: #e8ece6;
+  --txt2: #9fae9f;
+  --txt3: #6c7a6c;
+  --acc: #8fd634;
+  --acc-deep: #a9e95c;
+  --acc-soft: rgba(143, 214, 52, 0.14);
+  --blue: #5f93ff;
+  --blue-soft: rgba(95, 147, 255, 0.14);
+  --red: #ff6b6f;
+  --red-soft: rgba(255, 107, 111, 0.14);
+  --amber: #f2b13d;
+  --amber-soft: rgba(242, 177, 61, 0.14);
+  --violet: #a78bfa;
+  --violet-soft: rgba(167, 139, 250, 0.14);
+  --teal: #2fc4b2;
+  --dark-btn: #e8ece6;
+  --dark-btn-h: #ffffff;
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 18px 50px rgba(0, 0, 0, 0.55);
+  --glow: rgba(143, 214, 52, 0.6);
+}
+
+:root[data-theme='dark'] .thm-img { filter: invert(1) hue-rotate(180deg); }
